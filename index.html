@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RaconteurAI</title>
+    <title>Welcome to RaconteurAI</title>
     <style>
       body {
         background-image: url('Background.png');
@@ -9,72 +9,111 @@
         background-position: center;
         font-family: Arial, sans-serif;
         color: #333;
+        text-align: center;
         margin: 0;
         padding: 0;
       }
 
+      .container {
+        background-color: #ffffff;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 40px 20px;
+      }
+
       h1 {
         font-size: 48px;
-        text-align: center;
-        margin: 40px 0 10px;
-        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #333;
         font-weight: bold;
       }
 
       p {
         font-size: 24px;
+        margin-bottom: 0;
+        color: #333;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+      }
+
+      .links a {
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 2px solid #333;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
         text-align: center;
-        margin-bottom: 20px;
-        color: #666;
+        line-height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
       }
 
-      .google-form {
-        position: relative;
-        width: 100%;
-        height: 90vh; /* Default height for larger screens */
-        overflow: hidden;
+      .links a:hover {
+        background-color: #333;
+        color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
       }
-
-      .google-form iframe {
-        position: absolute;
-        top: 0;
+      
+      /* Footer */
+       footer {
+        background-color: #333;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        border: 0;
+        z-index: 1;
+        color: #fff; /* Set text color to white */
+      }
+
+      footer p {
+        font-size: 14px;
+        margin: 0;
+        color: #fff;
       }
 
       /* Mobile devices */
       @media only screen and (max-width: 767px) {
-        body {
-          margin: 0;
-          padding: 0;
+        .links {
+          height: auto;
         }
 
-        .google-form {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-
-        .google-form iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
+        .links a {
+          width: 80%;
+          margin: 10px auto;
         }
       }
     </style>
   </head>
   <body>
-    <h1></h1>
-    <p></p>
-    <div class="google-form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfN3AEuqbUSxhOF7f79J8nsudsqB9q6BniEpoJt9HkjCyPfNQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <div class="container">
+      <h1>Welcome to RaconteurAI</h1>
+      <p>The magic spinner,<br>
+        Whipping up tales that are always a winner!</p>
+      <p>Please select your device below:</p>
     </div>
+    <div class="links">
+      <a href="desktop.html">Desktop</a>
+      <a href="mobile.html">Mobile</a>
+    </div>
+    <footer>
+      <p>&copy; 2023 RaconteurAI</p>
+    </footer>
   </body>
 </html>

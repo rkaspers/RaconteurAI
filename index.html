@@ -9,6 +9,8 @@
         background-position: center;
         font-family: Arial, sans-serif;
         color: #333;
+        margin: 0;
+        padding: 0;
       }
 
       h1 {
@@ -29,7 +31,7 @@
       .google-form {
         position: relative;
         width: 100%;
-        height: 80vh; /* Default height for larger screens */
+        height: 90vh; /* Default height for larger screens */
         overflow: hidden;
       }
 
@@ -43,24 +45,29 @@
       }
 
       /* Mobile devices */
-@media only screen and (max-width: 767px) {
-  .google-form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    overflow: hidden;
-  }
+      @media only screen and (max-width: 767px) {
+        body {
+          margin: 0;
+          padding: 0;
+        }
 
-  .google-form iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
+        .google-form {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        .google-form iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
     </style>
   </head>
   <body>

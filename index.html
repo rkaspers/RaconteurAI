@@ -43,11 +43,24 @@
       }
 
       /* Mobile devices */
-      @media only screen and (max-width: 767px) {
-        .google-form {
-          height: 100vh; /* Full screen height for mobile devices */
-        }
-      }
+@media only screen and (max-width: 767px) {
+  .google-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .google-form iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
     </style>
   </head>
   <body>
